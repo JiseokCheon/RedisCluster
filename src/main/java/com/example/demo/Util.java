@@ -17,26 +17,6 @@ public class Util {
 		}
 	}
 
-	public long checkLong(String val) {
-		try {
-			long l = Long.parseLong(val);
-			return l;
-		} catch (NumberFormatException e) {
-			return Long.MIN_VALUE;
-		}
-	}
-
-	public double checkDouble(String val) {
-		try {
-			double d = Double.parseDouble(val);
-			return d;
-		} catch (NumberFormatException e) {
-			return Double.MIN_VALUE;
-		}
-	}
-
-	// space(공란)이 여러개 있어도 처리하고 "str1 str2"도 한 단어로 처리한다. 
-	// https://code-examples.net/ko/q/335d89
 	public String[] split(String str) {
 		str += " "; // To detect last token when not quoted...
 		ArrayList<String> strings = new ArrayList<String>();
